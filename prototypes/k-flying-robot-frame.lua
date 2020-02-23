@@ -9,8 +9,8 @@ local sb = serpent.block
 local item = {
   icon = "__base__/graphics/icons/flying-robot-frame.png",
   icon_size = 32,
-  name = "flying-robot-frame",
-  order = "l[flying-robot-frame]",
+  name = "k-flying-robot-frame",
+  order = "kizrak-l[flying-robot-frame]",
   stack_size = 50,
   subgroup = "intermediate-product",
   type = "item"
@@ -40,8 +40,8 @@ local recipe = {
       3
     }
   },
-  name = "flying-robot-frame",
-  result = "flying-robot-frame",
+  name = "k-flying-robot-frame",
+  result = "k-flying-robot-frame",
   type = "recipe"
 }
 
