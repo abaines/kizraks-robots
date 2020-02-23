@@ -85,6 +85,8 @@ require("prototypes.k-logistic-chest-storage")
 require("prototypes.k-logistic-chest-buffer")
 require("prototypes.k-logistic-chest-requester")
 
+require("prototypes.k-roboport")
+
 require("prototypes.k-logistic-chest-technology")
 
 
@@ -94,14 +96,9 @@ logRecipeCategoryMap()
 
 logDataRawType("item")
 
-logDataRawType("logistic-container")
-logDataRawType("logistic-robot")
-logDataRawType("construction-robot")
+logDataRawType("roboport")
 
-log(sb( data.raw["item"]["logistic-chest-buffer"] ))
-log(sb( data.raw["logistic-container"]["logistic-chest-buffer"] ))
-log(sb( data.raw["recipe"]["logistic-chest-buffer"] ))
-
-
-log(sb( data.raw["recipe"]["advanced-circuit"] ))
+log(sb( data.raw["item"]["roboport"] ))
+log(sb( data.raw["recipe"]["roboport"] ))
+log(sb( data.raw["roboport"]["roboport"] ))
 
