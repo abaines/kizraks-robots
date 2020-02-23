@@ -299,15 +299,15 @@ local entity = {
   },
   collision_box = {
     {
-      -1.7,
-      -1.7
+      -1.7*1.25,
+      -1.7*1.25
     },
     {
-      1.7,
-      1.7
+      1.7*1.25,
+      1.7*1.25
     }
   },
-  construction_radius = 55,
+  construction_radius = 55/2.0,
   corpse = "roboport-remnants",
   default_available_construction_output_signal = {
     name = "signal-Z",
@@ -387,9 +387,9 @@ local entity = {
   },
   icon = "__base__/graphics/icons/roboport.png",
   icon_size = 32,
-  logistics_radius = 25,
-  material_slots_count = 7,
-  max_health = 500,
+  logistics_radius = 25/2.0,
+  material_slots_count = 7/2.0,
+  max_health = 500/2.0,
   minable = {
     mining_time = 0.1,
     result = "k-roboport"
@@ -434,15 +434,15 @@ local entity = {
       type = "impact"
     }
   },
-  robot_slots_count = 7,
+  robot_slots_count = 7/2.0,
   selection_box = {
     {
-      -2,
-      -2
+      -2*1.25,
+      -2*1.25
     },
     {
-      2,
-      2
+      2*1.25,
+      2*1.25
     }
   },
   spawn_and_station_height = -0.1,
