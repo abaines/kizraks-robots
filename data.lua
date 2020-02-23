@@ -80,6 +80,7 @@ end
 
 
 require("prototypes.k-logistic-chest-requester")
+require("prototypes.k-logistic-chest-buffer")
 
 
 logDataRawTypeList()
@@ -92,9 +93,9 @@ logDataRawType("logistic-container")
 logDataRawType("logistic-robot")
 logDataRawType("construction-robot")
 
-log(sb( data.raw["item"]["logistic-chest-requester"] ))
-log(sb( data.raw["logistic-container"]["logistic-chest-requester"] ))
-log(sb( data.raw["recipe"]["logistic-chest-requester"] ))
+log(sb( data.raw["item"]["logistic-chest-buffer"] ))
+log(sb( data.raw["logistic-container"]["logistic-chest-buffer"] ))
+log(sb( data.raw["recipe"]["logistic-chest-buffer"] ))
 
 
 log(sb( data.raw["recipe"]["advanced-circuit"] ))

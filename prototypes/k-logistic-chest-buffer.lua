@@ -10,11 +10,11 @@ local logistic_container = {
   animation = {
     layers = {
       {
-        filename = "__base__/graphics/entity/logistic-chest/logistic-chest-requester.png",
+        filename = "__base__/graphics/entity/logistic-chest/logistic-chest-buffer.png",
         frame_count = 7,
         height = 38,
         hr_version = {
-          filename = "__base__/graphics/entity/logistic-chest/hr-logistic-chest-requester.png",
+          filename = "__base__/graphics/entity/logistic-chest/hr-logistic-chest-buffer.png",
           frame_count = 7,
           height = 74,
           priority = "extra-high",
@@ -73,23 +73,23 @@ local logistic_container = {
       0.35
     }
   },
-  corpse = "requester-chest-remnants",
+  corpse = "buffer-chest-remnants",
   fast_replaceable_group = "container",
   flags = {
     "placeable-player",
     "player-creation"
   },
-  icon = "__base__/graphics/icons/logistic-chest-requester.png",
+  icon = "__base__/graphics/icons/logistic-chest-buffer.png",
   icon_size = 32,
   inventory_size = 6,
-  logistic_mode = "requester",
+  logistic_mode = "buffer",
   logistic_slots_count = 1,
   max_health = 150,
   minable = {
     mining_time = 0.1,
-    result = "k-logistic-chest-requester"
+    result = "k-logistic-chest-buffer"
   },
-  name = "k-logistic-chest-requester",
+  name = "k-logistic-chest-buffer",
   open_sound = {
     filename = "__base__/sound/metallic-chest-open.ogg",
     volume = 0.65
@@ -126,11 +126,11 @@ data:extend{logistic_container}
 
 
 local item = {
-  icon = "__base__/graphics/icons/logistic-chest-requester.png",
+  icon = "__base__/graphics/icons/logistic-chest-buffer.png",
   icon_size = 32,
-  name = "k-logistic-chest-requester",
-  order = "b[storage]-e[logistic-chest-requester]",
-  place_result = "k-logistic-chest-requester",
+  name = "k-logistic-chest-buffer",
+  order = "b[storage]-e[logistic-chest-buffer]",
+  place_result = "k-logistic-chest-buffer",
   stack_size = 5,
   subgroup = "logistic-network",
   type = "item"
@@ -153,8 +153,8 @@ local recipe = {
     {type="fluid", name="steam", amount=120},
     {name="coal", amount=10},
   },
-  name = "k-logistic-chest-requester",
-  result = "k-logistic-chest-requester",
+  name = "k-logistic-chest-buffer",
+  result = "k-logistic-chest-buffer",
   category = "crafting-with-fluid",
   energy_required = 13,
   type = "recipe"
