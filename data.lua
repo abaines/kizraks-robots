@@ -86,6 +86,7 @@ require("prototypes.k-logistic-chest-buffer")
 require("prototypes.k-logistic-chest-requester")
 
 require("prototypes.k-roboport")
+require("prototypes.k-flying-robot-frame")
 
 require("prototypes.k-logistic-chest-technology")
 
@@ -98,7 +99,9 @@ logDataRawType("item")
 
 logDataRawType("roboport")
 
-log(sb( data.raw["item"]["roboport"] ))
-log(sb( data.raw["recipe"]["roboport"] ))
-log(sb( data.raw["roboport"]["roboport"] ))
+log(sb( data.raw["item"]["flying-robot-frame"] ))
+log(sb( data.raw["recipe"]["flying-robot-frame"] ))
+
+--log(sb( data.raw["logistic-robot"]["logistic-robot"] ))
+--log(sb( data.raw["construction-robot"]["construction-robot"] ))
 
