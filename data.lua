@@ -96,3 +96,6 @@ log(sb( data.raw["item"]["logistic-chest-requester"] ))
 log(sb( data.raw["logistic-container"]["logistic-chest-requester"] ))
 log(sb( data.raw["recipe"]["logistic-chest-requester"] ))
 
+
+log(sb( data.raw["recipe"]["advanced-circuit"] ))
+

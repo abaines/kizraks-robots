@@ -148,15 +148,15 @@ local recipe = {
     },
     {
       "electronic-circuit",
-      3
+      6
     },
-    {
-      "advanced-circuit",
-      1
-    }
+    {type="fluid", name="steam", amount=120},
+    {name="coal", amount=10},
   },
   name = "k-logistic-chest-requester",
   result = "k-logistic-chest-requester",
+  category = "crafting-with-fluid",
+  energy_required = 13
   type = "recipe"
 }
 
