@@ -85,6 +85,8 @@ require("prototypes.k-logistic-chest-storage")
 require("prototypes.k-logistic-chest-buffer")
 require("prototypes.k-logistic-chest-requester")
 
+require("prototypes.k-logistic-chest-technology")
+
 
 logDataRawTypeList()
 
