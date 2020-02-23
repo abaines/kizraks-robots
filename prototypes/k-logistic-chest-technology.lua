@@ -43,7 +43,7 @@ local technology = {
     },
     time = 5
   },
-  --prerequisites = "steel-processing"
+  prerequisites = {"steel-processing"},
 }
 
 data:extend{technology}
