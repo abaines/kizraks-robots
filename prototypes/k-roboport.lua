@@ -54,7 +54,7 @@ local entity = {
         hr_version = {
           filename = "__base__/graphics/entity/roboport/hr-roboport-base.png",
           height = 277,
-          scale = 0.5,
+          scale = 0.5*1.25,
           shift = {
             0.0625,
             0.2421875
@@ -76,7 +76,7 @@ local entity = {
           filename = "__base__/graphics/entity/roboport/hr-roboport-shadow.png",
           force_hr_shadow = true,
           height = 201,
-          scale = 0.5,
+          scale = 0.5*1.25,
           shift = {
             0.890625,
             0.6015625
@@ -102,10 +102,10 @@ local entity = {
       frame_count = 8,
       height = 59,
       priority = "medium",
-      scale = 0.5,
+      scale = 0.5*1.25,
       shift = {
-        -0.5546875,
-        -1.9140625
+        -0.5546875*1.25,
+        -1.9140625*1.25
       },
       width = 83
     },
@@ -125,7 +125,7 @@ local entity = {
       frame_count = 1,
       height = 100,
       priority = "medium",
-      scale = 0.5,
+      scale = 0.5*1.25,
       shift = {
         0.046875,
         0.15625
@@ -143,20 +143,20 @@ local entity = {
   charging_energy = "500kW",
   charging_offsets = {
     {
-      -1.5,
-      -0.5
+      -1.5*1.25,
+      -0.5*1.25-0.4
     },
     {
-      1.5,
-      -0.5
+      1.5*1.25,
+      -0.5*1.25-0.4
     },
     {
-      1.5,
-      1.5
+      1.5*1.25,
+      1.5*1.25-0.4
     },
     {
-      -1.5,
-      1.5
+      -1.5*1.25,
+      1.5*1.25-0.4
     }
   },
   close_door_trigger_effect = {
@@ -189,10 +189,10 @@ local entity = {
       frame_count = 16,
       height = 41,
       priority = "medium",
-      scale = 0.5,
+      scale = 0.5*1.25,
       shift = {
-        -0.0078125,
-        -0.3046875
+        -0.0078125*1.25,
+        -0.3046875*1.25
       },
       width = 97
     },
@@ -212,10 +212,10 @@ local entity = {
       frame_count = 16,
       height = 38,
       priority = "medium",
-      scale = 0.5,
+      scale = 0.5*1.25,
       shift = {
-        -0.0078125,
-        -0.921875
+        -0.0078125*1.25,
+        -0.921875*1.25
       },
       width = 97
     },
