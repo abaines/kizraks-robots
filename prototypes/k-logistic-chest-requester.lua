@@ -139,3 +139,26 @@ local item = {
 data:extend{item}
 
 
+local recipe = {
+  enabled = false,
+  ingredients = {
+    {
+      "steel-chest",
+      1
+    },
+    {
+      "electronic-circuit",
+      3
+    },
+    {
+      "advanced-circuit",
+      1
+    }
+  },
+  name = "k-logistic-chest-requester",
+  result = "k-logistic-chest-requester",
+  type = "recipe"
+}
+
+data:extend{recipe}
+
