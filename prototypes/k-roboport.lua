@@ -140,7 +140,7 @@ local entity = {
     width = 69
   },
   charge_approach_distance = 5,
-  charging_energy = "1000kW",
+  charging_energy = "500kW",
   charging_offsets = {
     {
       -1.5,
@@ -380,7 +380,7 @@ local entity = {
     type = "electric",
     usage_priority = "secondary-input"
   },
-  energy_usage = "50kW",
+  energy_usage = "100kW",
   flags = {
     "placeable-player",
     "player-creation"
