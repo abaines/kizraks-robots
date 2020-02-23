@@ -12,7 +12,7 @@ local item = {
   name = "k-roboport",
   order = "kizrak-c[signal]-a[roboport]",
   place_result = "k-roboport",
-  stack_size = 10,
+  stack_size = 5,
   subgroup = "logistic-network",
   type = "item"
 }
@@ -26,17 +26,17 @@ local recipe = {
   ingredients = {
     {
       "steel-plate",
-      45
+      36
     },
+    {name="engine-unit", amount=25},
     {
-      "iron-gear-wheel",
-      45
+      "electronic-circuit",
+      90
     },
-    {
-      "advanced-circuit",
-      45
-    }
+    {type="fluid", name="steam", amount=2700},
+    {name="coal", amount=220},
   },
+  category = "crafting-with-fluid",
   name = "k-roboport",
   result = "k-roboport",
   type = "recipe"
