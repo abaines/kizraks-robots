@@ -79,15 +79,19 @@ local function logRecipeCategoryMap()
 end
 
 
+require("prototypes.k-logistic-chest-requester")
+
 
 logDataRawTypeList()
 
 logRecipeCategoryMap()
 
+logDataRawType("item")
 
 logDataRawType("logistic-container")
 logDataRawType("logistic-robot")
 logDataRawType("construction-robot")
 
+log(sb( data.raw["item"]["logistic-chest-requester"] ))
 log(sb( data.raw["logistic-container"]["logistic-chest-requester"] ))
 
