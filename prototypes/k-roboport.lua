@@ -61,6 +61,7 @@ local entity = {
           },
           width = 228
         },
+        scale = 1.25,
         shift = {
           0.5,
           0.25
@@ -83,6 +84,7 @@ local entity = {
           },
           width = 294
         },
+        scale = 1.25,
         shift = {
           0.890625,
           0.6015625
@@ -110,9 +112,10 @@ local entity = {
       width = 83
     },
     priority = "medium",
+    scale = 1.25,
     shift = {
-      -0.53149999999999995,
-      -1.9375
+      -0.53149999999999995*1.25-0.15,
+      -1.9375*1.25
     },
     width = 42
   },
@@ -133,9 +136,10 @@ local entity = {
       width = 138
     },
     priority = "medium",
+    scale = 1.25,
     shift = {
-      0.03125,
-      0.203125
+      0.03125-0.1,
+      0.203125-0.0
     },
     width = 69
   },
@@ -197,9 +201,10 @@ local entity = {
       width = 97
     },
     priority = "medium",
+    scale = 1.25,
     shift = {
-      0.015625,
-      -0.234375
+      0.015625*1.25,
+      -0.234375*1.25
     },
     width = 52
   },
@@ -220,9 +225,10 @@ local entity = {
       width = 97
     },
     priority = "medium",
+    scale = 1.25,
     shift = {
-      0.015625,
-      -0.890625
+      0.015625*1.25,
+      -0.890625*1.25
     },
     width = 52
   },
