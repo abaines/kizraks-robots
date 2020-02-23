@@ -156,7 +156,7 @@ local recipe = {
   name = "k-logistic-chest-requester",
   result = "k-logistic-chest-requester",
   category = "crafting-with-fluid",
-  energy_required = 13
+  energy_required = 13,
   type = "recipe"
 }
 
