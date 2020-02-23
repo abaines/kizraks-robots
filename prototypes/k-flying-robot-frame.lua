@@ -11,7 +11,7 @@ local item = {
   icon_size = 32,
   name = "k-flying-robot-frame",
   order = "kizrak-l[flying-robot-frame]",
-  stack_size = 50,
+  stack_size = 10,
   subgroup = "intermediate-product",
   type = "item"
 }
@@ -23,23 +23,14 @@ local recipe = {
   enabled = false,
   energy_required = 20,
   ingredients = {
-    {
-      "electric-engine-unit",
-      1
-    },
-    {
-      "battery",
-      2
-    },
-    {
-      "steel-plate",
-      1
-    },
-    {
-      "electronic-circuit",
-      3
-    }
+    {name="electronic-circuit", amount=9},
+    {name="engine-unit", amount=4},
+    {name="solar-panel", amount=1},
+    {name="copper-plate", amount=8},
+    {type="fluid", name="steam", amount=200},
+    {name="coal", amount=45},
   },
+  category = "crafting-with-fluid",
   name = "k-flying-robot-frame",
   result = "k-flying-robot-frame",
   type = "recipe"
