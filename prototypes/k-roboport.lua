@@ -9,9 +9,9 @@ local sb = serpent.block
 local item = {
   icon = "__base__/graphics/icons/roboport.png",
   icon_size = 32,
-  name = "roboport",
-  order = "c[signal]-a[roboport]",
-  place_result = "roboport",
+  name = "k-roboport",
+  order = "kizrak-c[signal]-a[roboport]",
+  place_result = "k-roboport",
   stack_size = 10,
   subgroup = "logistic-network",
   type = "item"
@@ -37,8 +37,8 @@ local recipe = {
       45
     }
   },
-  name = "roboport",
-  result = "roboport",
+  name = "k-roboport",
+  result = "k-roboport",
   type = "recipe"
 }
 
@@ -392,9 +392,9 @@ local entity = {
   max_health = 500,
   minable = {
     mining_time = 0.1,
-    result = "roboport"
+    result = "k-roboport"
   },
-  name = "roboport",
+  name = "k-roboport",
   open_door_trigger_effect = {
     {
       sound = {
