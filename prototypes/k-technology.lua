@@ -5,7 +5,7 @@
 local sb = serpent.block
 
 
-local technology = {
+local technology_chest = {
   effects = {
     {
       recipe = "k-logistic-chest-passive-provider",
@@ -27,10 +27,6 @@ local technology = {
       recipe = "k-logistic-chest-requester",
       type = "unlock-recipe"
     },
-    {
-      recipe = "k-roboport",
-      type = "unlock-recipe"
-    },
   },
   icon = "__base__/graphics/technology/logistic-system.png",
   icon_size = 128,
@@ -47,8 +43,68 @@ local technology = {
     },
     time = 5
   },
-  prerequisites = {"steel-processing", "engine","solar-energy",},
+  prerequisites = {"steel-processing",},
 }
 
-data:extend{technology}
+data:extend{technology_chest}
+
+
+local technology_roboport = {
+  effects = {
+    {
+      recipe = "k-roboport",
+      type = "unlock-recipe"
+    },
+  },
+  icon = "__kizraks-robots__/graphics/technology/roboport.png",
+  icon_size = 128,
+  name = "k-roboport-technology",
+  order = "kizrak-c-a",
+  type = "technology",
+  unit = {
+    count = 5,
+    ingredients = {
+      { "automation-science-pack", 1 },
+      { "logistic-science-pack", 1 },
+    },
+    time = 5
+  },
+  prerequisites = {"engine",},
+}
+
+data:extend{technology_roboport}
+
+
+local technology_robot = {
+  effects = {
+    {
+      recipe = "k-flying-robot-frame",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "k-logistic-robot",
+      type = "unlock-recipe"
+    },
+    {
+      recipe = "k-construction-robot",
+      type = "unlock-recipe"
+    },
+  },
+  icon = "__base__/graphics/technology/robotics.png",
+  icon_size = 128,
+  name = "k-robot-technology",
+  order = "kizrak-c-a",
+  type = "technology",
+  unit = {
+    count = 5,
+    ingredients = {
+      { "automation-science-pack", 1 },
+      { "logistic-science-pack", 1 },
+    },
+    time = 5
+  },
+  prerequisites = {"engine","solar-energy","circuit-network",},
+}
+
+data:extend{technology_robot}
 
