@@ -86,7 +86,9 @@ require("prototypes.k-logistic-chest-buffer")
 require("prototypes.k-logistic-chest-requester")
 
 require("prototypes.k-roboport")
+
 require("prototypes.k-flying-robot-frame")
+require("prototypes.k-logistic-robot")
 
 require("prototypes.k-logistic-chest-technology")
 
