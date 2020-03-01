@@ -24,7 +24,7 @@ local recipe = {
   enabled = false,
   ingredients = {
     {
-      "flying-robot-frame",
+      "k-flying-robot-frame",
       1
     },
     {
