@@ -12,7 +12,7 @@ local item = {
   name = "k-construction-robot",
   order = "kizrak-a[robot]-b[construction-robot]",
   place_result = "k-construction-robot",
-  stack_size = 50,
+  stack_size = 50/2,
   subgroup = "logistic-network",
   type = "item"
 }
@@ -28,8 +28,8 @@ local recipe = {
       1
     },
     {
-      "electronic-circuit",
-      2
+      "decider-combinator",
+      1
     }
   },
   name = "k-construction-robot",
@@ -129,7 +129,7 @@ local entity = {
   max_health = 100,
   max_payload_size = 1,
   max_to_charge = 0.95,
-  min_to_charge = 0.2,
+  min_to_charge = 0.4, -- 0.2
   minable = {
     mining_time = 0.1,
     result = "k-construction-robot"
@@ -356,7 +356,7 @@ local entity = {
       width = 44
     }
   },
-  speed = 0.06,
+  speed = 0.06/1.75,
   speed_multiplier_when_out_of_energy = 0.2,
   type = "construction-robot",
   working = {
