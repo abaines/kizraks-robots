@@ -91,7 +91,7 @@ require("prototypes.k-flying-robot-frame")
 require("prototypes.k-logistic-robot")
 require("prototypes.k-construction-robot")
 
-require("prototypes.k-logistic-chest-technology")
+require("prototypes.k-technology")
 
 
 logDataRawTypeList()
