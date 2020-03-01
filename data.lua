@@ -97,11 +97,17 @@ logRecipeCategoryMap()
 
 logDataRawType("item")
 
-logDataRawType("roboport")
 
-log(sb( data.raw["item"]["flying-robot-frame"] ))
-log(sb( data.raw["recipe"]["flying-robot-frame"] ))
+logDataRawType("logistic-robot")
 
---log(sb( data.raw["logistic-robot"]["logistic-robot"] ))
+log(sb( data.raw["item"]["logistic-robot"] ))
+log(sb( data.raw["recipe"]["logistic-robot"] ))
+log(sb( data.raw["logistic-robot"]["logistic-robot"] ))
+
+
+--logDataRawType("construction-robot")
+
+--log(sb( data.raw["item"]["construction-robot"] ))
+--log(sb( data.raw["recipe"]["construction-robot"] ))
 --log(sb( data.raw["construction-robot"]["construction-robot"] ))
 
