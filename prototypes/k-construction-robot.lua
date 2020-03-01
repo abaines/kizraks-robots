@@ -9,9 +9,9 @@ local sb = serpent.block
 local item = {
   icon = "__base__/graphics/icons/construction-robot.png",
   icon_size = 32,
-  name = "construction-robot",
-  order = "a[robot]-b[construction-robot]",
-  place_result = "construction-robot",
+  name = "k-construction-robot",
+  order = "kizrak-a[robot]-b[construction-robot]",
+  place_result = "k-construction-robot",
   stack_size = 50,
   subgroup = "logistic-network",
   type = "item"
@@ -32,8 +32,8 @@ local recipe = {
       2
     }
   },
-  name = "construction-robot",
-  result = "construction-robot",
+  name = "k-construction-robot",
+  result = "k-construction-robot",
   type = "recipe"
 }
 
@@ -132,9 +132,9 @@ local entity = {
   min_to_charge = 0.2,
   minable = {
     mining_time = 0.1,
-    result = "construction-robot"
+    result = "k-construction-robot"
   },
-  name = "construction-robot",
+  name = "k-construction-robot",
   resistances = {
     {
       percent = 85,
