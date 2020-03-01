@@ -89,6 +89,7 @@ require("prototypes.k-roboport")
 
 require("prototypes.k-flying-robot-frame")
 require("prototypes.k-logistic-robot")
+require("prototypes.k-construction-robot")
 
 require("prototypes.k-logistic-chest-technology")
 
@@ -100,16 +101,10 @@ logRecipeCategoryMap()
 logDataRawType("item")
 
 
-logDataRawType("logistic-robot")
 
-log(sb( data.raw["item"]["logistic-robot"] ))
-log(sb( data.raw["recipe"]["logistic-robot"] ))
-log(sb( data.raw["logistic-robot"]["logistic-robot"] ))
+logDataRawType("construction-robot")
 
-
---logDataRawType("construction-robot")
-
---log(sb( data.raw["item"]["construction-robot"] ))
---log(sb( data.raw["recipe"]["construction-robot"] ))
---log(sb( data.raw["construction-robot"]["construction-robot"] ))
+log(sb( data.raw["item"]["construction-robot"] ))
+log(sb( data.raw["recipe"]["construction-robot"] ))
+log(sb( data.raw["construction-robot"]["construction-robot"] ))
 
