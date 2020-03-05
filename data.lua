@@ -108,3 +108,8 @@ log(sb( data.raw["item"]["construction-robot"] ))
 log(sb( data.raw["recipe"]["construction-robot"] ))
 log(sb( data.raw["construction-robot"]["construction-robot"] ))
 
+
+-- TODO: i18n K2 Flying Robot Frame, K2 Roboport, K2 Chest, etc
+
+
+
