@@ -2,7 +2,7 @@
 
 -- data.lua
 
-local sb = serpent.block
+local sb = serpent.block -- luacheck: ignore 211
 
 
 

@@ -43,7 +43,7 @@ end
 
 local function logDataRawTypeList()
 	local dataRawTypeList = {}
-	for k, v in pairs(data.raw) do
+	for k, _ in pairs(data.raw) do
 		if not string.find(k, "achievement") then
 			table.insert(dataRawTypeList,k)
 		end
@@ -54,7 +54,7 @@ end
 
 local function logDataRawType(rawType)
 	local rawTypeList = {}
-	for k, v in pairs(data.raw[rawType]) do
+	for k, _ in pairs(data.raw[rawType]) do
 		table.insert(rawTypeList,k)
 	end
 	log(compactLog("keys in `data.raw."..rawType.."`:",rawTypeList,6))
