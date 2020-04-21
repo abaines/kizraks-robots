@@ -25,12 +25,12 @@ local function compactLog(preamble,list,max_size)
 
 	--log(string.rep("=",80))
 	local i = 1
-	for row=1,max_rows-shortRows do
+	for _=1,max_rows-shortRows do
 		local sublist = {table.unpack(list, i, i+columns-1)}
 		i = columns + i
 		r = r .. "\n   " .. table.concat(sublist,", ")..","
 	end
-	for row=1+max_rows-shortRows,max_rows do
+	for _=1+max_rows-shortRows,max_rows do
 		local sublist = {table.unpack(list, i, i+columns-1-1)}
 		i = columns + i - 1
 		r = r .. "\n   " .. table.concat(sublist,", ")..","
