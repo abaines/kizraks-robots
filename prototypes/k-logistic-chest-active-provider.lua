@@ -129,7 +129,7 @@ local item = {
   icon = "__base__/graphics/icons/logistic-chest-active-provider.png",
   icon_size = 64, icon_mipmaps = 4,
   name = "k-logistic-chest-active-provider",
-  order = "kizrak-b[storage]-e[logistic-chest-active-provider]",
+  order = "kizrak-b[storage]-c[logistic-chest-active-provider]",
   place_result = "k-logistic-chest-active-provider",
   stack_size = 5,
   subgroup = "logistic-network",
