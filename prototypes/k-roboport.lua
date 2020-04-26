@@ -8,7 +8,7 @@ local sb = serpent.block -- luacheck: ignore 211
 
 local item = {
   icon = "__base__/graphics/icons/roboport.png",
-  icon_size = 32,
+  icon_size = 64, icon_mipmaps = 4,
   name = "k-roboport",
   order = "kizrak-c[signal]-a[roboport]",
   place_result = "k-roboport",
@@ -247,7 +247,7 @@ local entity = {
     "player-creation"
   },
   icon = "__base__/graphics/icons/roboport.png",
-  icon_size = 32,
+  icon_size = 64, icon_mipmaps = 4,
   logistics_radius = 25/2.0,
   material_slots_count = 7/2.0,
   max_health = 500/2.0,

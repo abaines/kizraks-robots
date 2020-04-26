@@ -8,7 +8,7 @@ local sb = serpent.block -- luacheck: ignore 211
 
 local item = {
   icon = "__base__/graphics/icons/flying-robot-frame.png",
-  icon_size = 32,
+  icon_size = 64, icon_mipmaps = 4,
   name = "k-flying-robot-frame",
   order = "kizrak-l[flying-robot-frame]",
   stack_size = 10,

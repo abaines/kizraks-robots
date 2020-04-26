@@ -80,7 +80,7 @@ local logistic_container = {
     "player-creation"
   },
   icon = "__base__/graphics/icons/logistic-chest-storage.png",
-  icon_size = 32,
+  icon_size = 64, icon_mipmaps = 4,
   inventory_size = 6,
   logistic_mode = "storage",
   logistic_slots_count = 1,
@@ -127,7 +127,7 @@ data:extend{logistic_container}
 
 local item = {
   icon = "__base__/graphics/icons/logistic-chest-storage.png",
-  icon_size = 32,
+  icon_size = 64, icon_mipmaps = 4,
   name = "k-logistic-chest-storage",
   order = "kizrak-b[storage]-e[logistic-chest-storage]",
   place_result = "k-logistic-chest-storage",
