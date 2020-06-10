@@ -36,14 +36,12 @@ local technology_chest = {
   unit = {
     count = 5,
     ingredients = {
-      {
-        "automation-science-pack",
-        1
-      }
+      { "automation-science-pack", 1 },
+      { "logistic-science-pack", 1 },
     },
     time = 5
   },
-  prerequisites = {"steel-processing",},
+  prerequisites = {"steel-processing","automation-2",},
 }
 
 data:extend{technology_chest}
@@ -69,7 +67,7 @@ local technology_roboport = {
     },
     time = 5
   },
-  prerequisites = {"engine",},
+  prerequisites = {"engine","automation-2",},
 }
 
 data:extend{technology_roboport}
@@ -103,7 +101,7 @@ local technology_robot = {
     },
     time = 5
   },
-  prerequisites = {"engine","solar-energy","circuit-network",},
+  prerequisites = {"engine","solar-energy","circuit-network","automation-2",},
 }
 
 data:extend{technology_robot}
