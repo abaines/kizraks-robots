@@ -83,7 +83,7 @@ local logistic_container = {
   icon_size = 64, icon_mipmaps = 4,
   inventory_size = 6,
   logistic_mode = "buffer",
-  logistic_slots_count = 1,
+  logistic_slots_count = 3,
   max_health = 150,
   minable = {
     mining_time = 0.1,
