@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2020.06.10
+  Changes:
+    - All technologies require Automation 2 now
+    - Buffer and Requester chests have 3 logistic slots
+    - Chest research requires red & green science
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2020.02.22
   Changes:
