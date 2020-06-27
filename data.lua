@@ -3,7 +3,7 @@
 -- data.lua
 
 
-local sb = serpent.block
+local sb = serpent.block -- luacheck: ignore 211
 
 
 local function compactLog(preamble,list,max_size)
@@ -52,7 +52,7 @@ local function logDataRawTypeList()
 end
 
 
-local function logDataRawType(rawType)
+local function logDataRawType(rawType) -- luacheck: ignore 211
 	local rawTypeList = {}
 	for k, _ in pairs(data.raw[rawType]) do
 		table.insert(rawTypeList,k)
