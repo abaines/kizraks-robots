@@ -79,17 +79,17 @@ local function logRecipeCategoryMap()
 end
 
 
-require("prototypes.k-logistic-chest-passive-provider")
-require("prototypes.k-logistic-chest-active-provider")
-require("prototypes.k-logistic-chest-storage")
-require("prototypes.k-logistic-chest-buffer")
-require("prototypes.k-logistic-chest-requester")
+require("prototypes.k-logistic-chest.k-passive-provider")
+require("prototypes.k-logistic-chest.k-active-provider")
+require("prototypes.k-logistic-chest.k-storage")
+require("prototypes.k-logistic-chest.k-buffer")
+require("prototypes.k-logistic-chest.k-requester")
 
 require("prototypes.k-roboport")
 
-require("prototypes.k-flying-robot-frame")
-require("prototypes.k-logistic-robot")
-require("prototypes.k-construction-robot")
+require("prototypes.k-robot.k-flying-robot-frame")
+require("prototypes.k-robot.k-logistic-robot")
+require("prototypes.k-robot.k-construction-robot")
 
 require("prototypes.k-technology")
 
