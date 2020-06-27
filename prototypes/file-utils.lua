@@ -29,7 +29,7 @@ local function pathReplaceRecursively(object, modname)
 			pathReplaceRecursively(v,modname)
 
 		elseif isString(v) and ends_with(v,".png") and not string.find(v, "shadow") then
-			log(v)
+			--log(v)
 			object[k] = pathReplace(v,modname)
 
 		end
@@ -39,9 +39,8 @@ end
 
 -- modname: "__vonNeumann__" or "__kizraks-robots__"
 return function(modname)
-	log("prototypes.file-utils  " .. modname)
+	--log("prototypes.file-utils  " .. modname)
 	return function(object)
-		log(modname)
 		return pathReplaceRecursively(object,modname)
 	end
 end

@@ -94,19 +94,19 @@ require("prototypes.k-robot.k-construction-robot")
 require("prototypes.k-technology")
 
 
-logDataRawTypeList()
+--logDataRawTypeList()
 
-logRecipeCategoryMap()
+--logRecipeCategoryMap()
 
-logDataRawType("item")
+--logDataRawType("item")
 
 
 
-logDataRawType("construction-robot")
+--logDataRawType("construction-robot")
 
-log(sb( data.raw["item"]["construction-robot"] ))
-log(sb( data.raw["recipe"]["construction-robot"] ))
-log(sb( data.raw["construction-robot"]["construction-robot"] ))
+--log(sb( data.raw["item"]["construction-robot"] ))
+--log(sb( data.raw["recipe"]["construction-robot"] ))
+--log(sb( data.raw["construction-robot"]["construction-robot"] ))
 
 
 -- TODO: i18n K2 Flying Robot Frame, K2 Roboport, K2 Chest, etc
