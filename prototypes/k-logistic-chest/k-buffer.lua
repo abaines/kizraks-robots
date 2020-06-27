@@ -2,6 +2,8 @@
 
 -- data.lua
 
+local pathReplaceRecursively = require('prototypes.file-utils')("__kizraks-robots__") -- luacheck: ignore 211
+
 local sb = serpent.block -- luacheck: ignore 211
 
 
@@ -122,6 +124,8 @@ local logistic_container = {
   }
 }
 
+pathReplaceRecursively(logistic_container)
+
 data:extend{logistic_container}
 
 
@@ -135,6 +139,8 @@ local item = {
   subgroup = "logistic-network",
   type = "item"
 }
+
+pathReplaceRecursively(item)
 
 data:extend{item}
 
