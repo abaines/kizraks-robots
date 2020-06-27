@@ -41,7 +41,7 @@ local function compactLog(preamble,list,max_size)
 end
 
 
-local function logDataRawTypeList()
+local function logDataRawTypeList() -- luacheck: ignore 211
 	local dataRawTypeList = {}
 	for k, _ in pairs(data.raw) do
 		if not string.find(k, "achievement") then
@@ -61,7 +61,7 @@ local function logDataRawType(rawType) -- luacheck: ignore 211
 end
 
 
-local function logRecipeCategoryMap()
+local function logRecipeCategoryMap() -- luacheck: ignore 211
 	local recipeCategoryMap = {}
 	for k, v in pairs(data.raw.recipe) do
 		-- https://wiki.factorio.com/Prototype/Recipe#category Default: "crafting"
