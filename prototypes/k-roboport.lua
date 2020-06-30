@@ -13,7 +13,7 @@ local item = {
   order = "kizrak-c[signal]-a[roboport]",
   place_result = "k-roboport",
   stack_size = 5,
-  subgroup = "logistic-network",
+  subgroup = "k-logistic-network",
   type = "item"
 }
 

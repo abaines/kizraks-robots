@@ -136,7 +136,7 @@ local item = {
   order = "kizrak-b[storage]-d[logistic-chest-buffer]",
   place_result = "k-logistic-chest-buffer",
   stack_size = 5,
-  subgroup = "logistic-network",
+  subgroup = "k-logistic-network",
   type = "item"
 }
 
