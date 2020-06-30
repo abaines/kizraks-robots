@@ -93,6 +93,8 @@ require("prototypes.k-robot.k-construction-robot")
 
 require("prototypes.k-technology")
 
+require("prototypes.k-logistic-network")
+
 
 --logDataRawTypeList()
 
