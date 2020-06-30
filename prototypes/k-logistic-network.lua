@@ -9,6 +9,5 @@ local k_logistic_network = table.deepcopy(data.raw["item-subgroup"]["logistic-ne
 
 k_logistic_network.name = "k-logistic-network"
 
-log(sb( k_logistic_network ))
 data:extend{k_logistic_network}
 
