@@ -5,7 +5,7 @@
 	"author": "Kizrak",
 	"contact": "",
 	"homepage": "https://github.com/abaines/kizraks-robots",
-	"factorio_version": "1.0.0",
+	"factorio_version": "1.0",
 	"dependencies": [
 		"base >= 1.0.0"
 	],
