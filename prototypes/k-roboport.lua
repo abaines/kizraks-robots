@@ -249,6 +249,7 @@ local entity = {
   icon = "__base__/graphics/icons/roboport.png",
   icon_size = 64, icon_mipmaps = 4,
   logistics_radius = 25/2.0,
+  logistics_connection_distance=25,
   material_slots_count = 7/2.0,
   max_health = 500/2.0,
   minable = {
