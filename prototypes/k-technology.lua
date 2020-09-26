@@ -125,12 +125,16 @@ local technology_logistic = {
 			type = "ghost-time-to-live",
 			modifier = 60 * 60 * 60 * 24,
 		},
+		{
+			type = "character-inventory-slots-bonus",
+			modifier = 30,
+		},
 	},
 	icon = "__base__/graphics/technology/logistic-robotics.png",
 	icon_size = 128,
 	name = "k-logistic-robotics-technology",
 	order = "kizrak-c-k-c",
-	prerequisites = {"automation-2",},
+	prerequisites = {"automation-2","toolbelt",},
 	type = "technology",
 	unit = {
 		count = 5,
