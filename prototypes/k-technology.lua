@@ -106,3 +106,41 @@ local technology_robot = {
 
 data:extend{technology_robot}
 
+
+local technology_logistic = {
+	effects = {
+		{
+			type = "character-logistic-requests",
+			modifier = true,
+		},
+		{
+			type = "auto-character-logistic-trash-slots",
+			modifier = true,
+		},
+		{
+			type = "character-logistic-trash-slots",
+			modifier = 25, -- 30
+		},
+		{
+			type = "ghost-time-to-live",
+			modifier = 60 * 60 * 60 * 24,
+		},
+	},
+	icon = "__base__/graphics/technology/logistic-robotics.png",
+	icon_size = 128,
+	name = "k-logistic-robotics-technology",
+	order = "kizrak-c-k-c",
+	prerequisites = {"automation-2",},
+	type = "technology",
+	unit = {
+		count = 5,
+		ingredients = {
+			{"automation-science-pack",1},
+			{"logistic-science-pack",1},
+		},
+		time = 5
+	}
+}
+
+data:extend{technology_logistic}
+
