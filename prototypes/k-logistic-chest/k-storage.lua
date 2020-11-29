@@ -84,6 +84,7 @@ local logistic_container = {
   icon = "__base__/graphics/icons/logistic-chest-storage.png",
   icon_size = 64, icon_mipmaps = 4,
   inventory_size = 6,
+  max_logistic_slots = 1,
   logistic_mode = "storage",
   max_health = 150,
   minable = {
