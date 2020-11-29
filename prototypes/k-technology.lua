@@ -114,10 +114,6 @@ local technology_logistic = {
 			modifier = true,
 		},
 		{
-			type = "auto-character-logistic-trash-slots",
-			modifier = true,
-		},
-		{
 			type = "character-logistic-trash-slots",
 			modifier = 25, -- 30
 		},

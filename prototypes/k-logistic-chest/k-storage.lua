@@ -126,6 +126,7 @@ local logistic_container = {
 pathReplaceRecursively(logistic_container)
 
 data:extend{logistic_container}
+log("logistic_container:\n"..sb(logistic_container))
 
 
 local item = {
