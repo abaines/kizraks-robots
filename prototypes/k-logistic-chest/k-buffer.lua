@@ -86,6 +86,7 @@ local logistic_container = {
   inventory_size = 6,
   logistic_mode = "buffer",
   logistic_slots_count = 3,
+  max_logistic_slots  = 3,
   max_health = 150,
   minable = {
     mining_time = 0.1,
