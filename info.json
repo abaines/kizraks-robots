@@ -1,13 +1,13 @@
 {
 	"name": "kizraks-robots",
-	"version": "0.1.11",
+	"version": "0.1.12",
 	"title": "Kizrak's Robots",
 	"author": "Kizrak",
 	"contact": "",
 	"homepage": "https://github.com/abaines/kizraks-robots",
 	"factorio_version": "1.1",
 	"dependencies": [
-		"base >= 1.0.0",
+		"base >= 1.1.42",
 		"? AutoDeconstruct"
 	],
 	"description": "Expensive|balanced oil-free early logistic and construction robots.\n\n#robots #logistics #early-game #resource-intensive #construction-robots #roboport"
