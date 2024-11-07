@@ -4,6 +4,9 @@
 
 local sb = serpent.block -- luacheck: ignore 211
 
+local function logsb(input)
+  log(sb(input))
+end
 
 
 local item = {
@@ -46,6 +49,20 @@ local recipe = {
 
 data:extend{recipe}
 
+local function scale(object,scale)
+  log("BEFORE "..sb(object))
+  for k1, v1 in ipairs(object) do
+   -- logsb(k1)
+   -- logsb(v1)
+    for k2, v2 in ipairs(v1) do
+      --logsb(k2)
+      --logsb(v2)
+      object[k1][k2] = v2 * scale
+    end
+  end
+  log("AFTER "..sb(object))
+end
+
 local k_roboport = table.deepcopy(data.raw["roboport"]["roboport"])
 
 k_roboport.name = "k-roboport"
@@ -64,21 +81,25 @@ k_roboport.recharging_light.color={r=1,g=1,b=1}
 k_roboport.recharging_light.intensity=0.4
 k_roboport.recharging_light.size=5
 
+log("------------------------------------------------------------")
+logsb(k_roboport.charging_offsets)
+logsb(k_roboport.collision_box)
+logsb(k_roboport.selection_box)
+log("============================================================")
+
+scale(k_roboport.charging_offsets, 1.25)
+scale(k_roboport.collision_box, 1.25)
+scale(k_roboport.selection_box, 1.25)
+
+logsb(k_roboport.charging_offsets)
+logsb(k_roboport.collision_box)
+logsb(k_roboport.selection_box)
+log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
 --[[
 charging_offsets *= 1.25
 collision_box *= 1.25
 selection_box *= 1.25
-
-recharging_light = {
-  color = {
-    b = 1,
-    g = 1,
-    r = 1
-  },
-  intensity = 0.4,
-  size = 5
-},
-
 ]]--
 
 
@@ -366,7 +387,7 @@ local entityold = {
   }
 }
 
-log(sb(k_roboport))
+--log(sb(k_roboport))
 
 data:extend{k_roboport}
 
