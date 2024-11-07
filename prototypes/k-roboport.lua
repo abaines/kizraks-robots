@@ -46,6 +46,42 @@ local recipe = {
 
 data:extend{recipe}
 
+local baseRoboport = data.raw["roboport"]["roboport"]
+log(sb(baseRoboport))
+
+--[[
+charge_approach_distance = 5,
+charging_energy = "500kW",
+charging_offsets *= 1.25
+circuit_connector = nil
+circuit_wire_max_distance = nil
+collision_box *= 1.25
+construction_radius = 27.5,
+energy_usage = "100kW",
+robot_slots_count = 3.5,
+
+selection_box *= 1.25
+
+logistics_connection_distance = 25,
+logistics_radius = 12.5,
+material_slots_count = 3.5,
+max_health = 250,
+minable = {
+  mining_time = 0.1,
+  result = "k-roboport"
+},
+name = "k-roboport",
+
+recharging_light = {
+  color = {
+    b = 1,
+    g = 1,
+    r = 1
+  },
+  intensity = 0.4,
+  size = 5
+},
+]]--
 
 local entity = {
   base = {
@@ -329,6 +365,8 @@ local entity = {
     }
   }
 }
+
+log(sb(entity))
 
 data:extend{entity}
 
