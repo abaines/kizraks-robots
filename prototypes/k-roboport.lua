@@ -112,10 +112,19 @@ k_roboport.base.layers[1].scale = k_roboport.base.layers[1].scale * scale_ratio
 k_roboport.base.layers[2].scale = k_roboport.base.layers[2].scale * scale_ratio
 
 k_roboport.base_animation.scale = scale_ratio * k_roboport.base_animation.scale
+k_roboport.base_animation.shift[1] = scale_ratio * k_roboport.base_animation.shift[1]
+k_roboport.base_animation.shift[2] = scale_ratio * k_roboport.base_animation.shift[2]
+
 k_roboport.base_patch.scale = scale_ratio * k_roboport.base_patch.scale
 
 k_roboport.door_animation_down.scale = scale_ratio * k_roboport.door_animation_down.scale
+k_roboport.door_animation_down.shift[1] = scale_ratio * k_roboport.door_animation_down.shift[1]
+k_roboport.door_animation_down.shift[2] = scale_ratio * k_roboport.door_animation_down.shift[2]
+
+
 k_roboport.door_animation_up.scale = scale_ratio * k_roboport.door_animation_up.scale
+k_roboport.door_animation_up.shift[1] = scale_ratio * k_roboport.door_animation_up.shift[1]
+k_roboport.door_animation_up.shift[2] = scale_ratio * k_roboport.door_animation_up.shift[2]
 
 k_roboport.recharging_animation.scale = scale_ratio * k_roboport.recharging_animation.scale
 
