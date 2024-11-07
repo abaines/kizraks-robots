@@ -50,7 +50,7 @@ local recipe = {
 data:extend{recipe}
 
 local function scale(object,scale)
-  log("BEFORE "..sb(object))
+  --log("BEFORE "..sb(object))
   for k1, v1 in ipairs(object) do
    -- logsb(k1)
    -- logsb(v1)
@@ -60,7 +60,7 @@ local function scale(object,scale)
       object[k1][k2] = v2 * scale
     end
   end
-  log("AFTER "..sb(object))
+  --log("AFTER "..sb(object))
 end
 
 local k_roboport = table.deepcopy(data.raw["roboport"]["roboport"])
@@ -81,26 +81,45 @@ k_roboport.recharging_light.color={r=1,g=1,b=1}
 k_roboport.recharging_light.intensity=0.4
 k_roboport.recharging_light.size=5
 
+--[[
 log("------------------------------------------------------------")
 logsb(k_roboport.charging_offsets)
 logsb(k_roboport.collision_box)
 logsb(k_roboport.selection_box)
 log("============================================================")
+]]--
 
-scale(k_roboport.charging_offsets, 1.25)
-scale(k_roboport.collision_box, 1.25)
-scale(k_roboport.selection_box, 1.25)
+local scale_ratio = 1.25
 
+scale(k_roboport.charging_offsets, scale_ratio)
+scale(k_roboport.collision_box, scale_ratio)
+scale(k_roboport.selection_box, scale_ratio)
+
+--[[
 logsb(k_roboport.charging_offsets)
 logsb(k_roboport.collision_box)
 logsb(k_roboport.selection_box)
 log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+]]--
 
 --[[
 charging_offsets *= 1.25
 collision_box *= 1.25
 selection_box *= 1.25
 ]]--
+
+k_roboport.base.layers[1].scale = k_roboport.base.layers[1].scale * scale_ratio
+k_roboport.base.layers[2].scale = k_roboport.base.layers[2].scale * scale_ratio
+
+k_roboport.base_animation.scale = scale_ratio * k_roboport.base_animation.scale
+k_roboport.base_patch.scale = scale_ratio * k_roboport.base_patch.scale
+
+k_roboport.door_animation_down.scale = scale_ratio * k_roboport.door_animation_down.scale
+k_roboport.door_animation_up.scale = scale_ratio * k_roboport.door_animation_up.scale
+
+k_roboport.recharging_animation.scale = scale_ratio * k_roboport.recharging_animation.scale
+
+k_roboport.water_reflection.pictures.scale = scale_ratio * k_roboport.water_reflection.pictures.scale 
 
 
 
@@ -387,7 +406,7 @@ local entityold = {
   }
 }
 
---log(sb(k_roboport))
+log(sb(k_roboport))
 
 data:extend{k_roboport}
 
