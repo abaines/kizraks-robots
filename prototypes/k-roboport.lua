@@ -46,21 +46,23 @@ local recipe = {
 
 data:extend{recipe}
 
-local entity = table.deepcopy(data.raw["roboport"]["roboport"])
-log(sb(entity))
+local k_roboport = table.deepcopy(data.raw["roboport"]["roboport"])
 
-entity.name = "k-roboport"
-entity.circuit_connector = nil
-entity.circuit_wire_max_distance = nil
-entity.construction_radius = 55/2
-entity.energy_usage = "100kW"
-entity.robot_slots_count = 7/2
-entity.logistics_connection_distance = 25
-entity.logistics_radius = 25/2
-entity.material_slots_count = 7/2
-entity.max_health = 500/2
-entity.minable.result = "k-roboport"
+k_roboport.name = "k-roboport"
+k_roboport.circuit_connector = nil
+k_roboport.circuit_wire_max_distance = nil
+k_roboport.construction_radius = 55/2
+k_roboport.energy_usage = "100kW"
+k_roboport.robot_slots_count = 7/2
+k_roboport.logistics_connection_distance = 25
+k_roboport.logistics_radius = 25/2
+k_roboport.material_slots_count = 7/2
+k_roboport.max_health = 500/2
+k_roboport.minable.result = "k-roboport"
 
+k_roboport.recharging_light.color={r=1,g=1,b=1}
+k_roboport.recharging_light.intensity=0.4
+k_roboport.recharging_light.size=5
 
 --[[
 charging_offsets *= 1.25
@@ -364,7 +366,7 @@ local entityold = {
   }
 }
 
-log(sb(entity))
+log(sb(k_roboport))
 
-data:extend{entity}
+data:extend{k_roboport}
 

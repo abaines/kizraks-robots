@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/abaines/kizraks-robots",
 	"factorio_version": "2.0",
 	"dependencies": [
-		"base >= 1.1.69",
+		"base >= 2.0.14",
 		"? AutoDeconstruct"
 	],
 	"description": "Expensive|balanced oil-free early logistic and construction robots.\n\n#robots #logistics #early-game #resource-intensive #construction-robots #roboport"
