@@ -11,7 +11,7 @@ end
 
 local item = {
   icon = "__base__/graphics/icons/roboport.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   name = "k-roboport",
   order = "kizrak-c[signal]-a[roboport]",
   place_result = "k-roboport",
@@ -138,16 +138,6 @@ local entityold = {
       {
         filename = "__base__/graphics/entity/roboport/roboport-base.png",
         height = 135,
-        hr_version = {
-          filename = "__base__/graphics/entity/roboport/hr-roboport-base.png",
-          height = 277,
-          scale = 0.5*1.25,
-          shift = {
-            0.0625,
-            0.2421875
-          },
-          width = 228
-        },
         scale = 1.25,
         shift = {
           0.5,
@@ -159,18 +149,6 @@ local entityold = {
         draw_as_shadow = true,
         filename = "__base__/graphics/entity/roboport/roboport-shadow.png",
         height = 101,
-        hr_version = {
-          draw_as_shadow = true,
-          filename = "__base__/graphics/entity/roboport/hr-roboport-shadow.png",
-          force_hr_shadow = true,
-          height = 201,
-          scale = 0.5*1.25,
-          shift = {
-            0.890625,
-            0.6015625
-          },
-          width = 294
-        },
         scale = 1.25,
         shift = {
           0.890625,
@@ -185,19 +163,6 @@ local entityold = {
     filename = "__base__/graphics/entity/roboport/roboport-base-animation.png",
     frame_count = 8,
     height = 31,
-    hr_version = {
-      animation_speed = 0.5,
-      filename = "__base__/graphics/entity/roboport/hr-roboport-base-animation.png",
-      frame_count = 8,
-      height = 59,
-      priority = "medium",
-      scale = 0.5*1.25,
-      shift = {
-        -0.5546875*1.25,
-        -1.9140625*1.25
-      },
-      width = 83
-    },
     priority = "medium",
     scale = 1.25,
     shift = {
@@ -210,18 +175,6 @@ local entityold = {
     filename = "__base__/graphics/entity/roboport/roboport-base-patch.png",
     frame_count = 1,
     height = 50,
-    hr_version = {
-      filename = "__base__/graphics/entity/roboport/hr-roboport-base-patch.png",
-      frame_count = 1,
-      height = 100,
-      priority = "medium",
-      scale = 0.5*1.25,
-      shift = {
-        0.046875,
-        0.15625
-      },
-      width = 138
-    },
     priority = "medium",
     scale = 1.25,
     shift = {
@@ -275,18 +228,6 @@ local entityold = {
     filename = "__base__/graphics/entity/roboport/roboport-door-down.png",
     frame_count = 16,
     height = 22,
-    hr_version = {
-      filename = "__base__/graphics/entity/roboport/hr-roboport-door-down.png",
-      frame_count = 16,
-      height = 41,
-      priority = "medium",
-      scale = 0.5*1.25,
-      shift = {
-        -0.0078125*1.25,
-        -0.3046875*1.25
-      },
-      width = 97
-    },
     priority = "medium",
     scale = 1.25,
     shift = {
@@ -299,18 +240,6 @@ local entityold = {
     filename = "__base__/graphics/entity/roboport/roboport-door-up.png",
     frame_count = 16,
     height = 20,
-    hr_version = {
-      filename = "__base__/graphics/entity/roboport/hr-roboport-door-up.png",
-      frame_count = 16,
-      height = 38,
-      priority = "medium",
-      scale = 0.5*1.25,
-      shift = {
-        -0.0078125*1.25,
-        -0.921875*1.25
-      },
-      width = 97
-    },
     priority = "medium",
     scale = 1.25,
     shift = {
@@ -334,7 +263,7 @@ local entityold = {
     "player-creation"
   },
   icon = "__base__/graphics/icons/roboport.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   logistics_radius = 25/2.0,
   logistics_connection_distance=25,
   material_slots_count = 7/2.0,

@@ -15,18 +15,6 @@ local logistic_container = {
         filename = "__base__/graphics/entity/logistic-chest/logistic-chest-storage.png",
         frame_count = 7,
         height = 38,
-        hr_version = {
-          filename = "__base__/graphics/entity/logistic-chest/hr-logistic-chest-storage.png",
-          frame_count = 7,
-          height = 74,
-          priority = "extra-high",
-          scale = 0.5,
-          shift = {
-            0,
-            -0.0625
-          },
-          width = 66
-        },
         priority = "extra-high",
         shift = {
           0,
@@ -38,19 +26,6 @@ local logistic_container = {
         draw_as_shadow = true,
         filename = "__base__/graphics/entity/logistic-chest/logistic-chest-shadow.png",
         height = 24,
-        hr_version = {
-          draw_as_shadow = true,
-          filename = "__base__/graphics/entity/logistic-chest/hr-logistic-chest-shadow.png",
-          height = 44,
-          priority = "extra-high",
-          repeat_count = 7,
-          scale = 0.5,
-          shift = {
-            0.265625,
-            0.15625
-          },
-          width = 96
-        },
         priority = "extra-high",
         repeat_count = 7,
         shift = {
@@ -82,7 +57,7 @@ local logistic_container = {
     "player-creation"
   },
   icon = "__base__/graphics/icons/logistic-chest-storage.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   inventory_size = 6,
   max_logistic_slots = 1,
   logistic_mode = "storage",
@@ -132,7 +107,7 @@ data:extend{logistic_container}
 
 local item = {
   icon = "__base__/graphics/icons/logistic-chest-storage.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   name = "k-logistic-chest-storage",
   order = "kizrak-b[storage]-c[logistic-chest-storage]",
   place_result = "k-logistic-chest-storage",

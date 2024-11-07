@@ -8,7 +8,7 @@ local sb = serpent.block -- luacheck: ignore 211
 
 local item = {
   icon = "__base__/graphics/icons/construction-robot.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   name = "k-construction-robot",
   order = "kizrak-a[robot]-b[construction-robot]",
   place_result = "k-construction-robot",
@@ -71,7 +71,7 @@ local entity = {
     "not-on-map"
   },
   icon = "__base__/graphics/icons/construction-robot.png",
-  icon_size = 64, icon_mipmaps = 4,
+  icon_size = 64,
   idle = copy.idle,
   in_motion = copy.in_motion,
   max_energy = "1.5MJ",
