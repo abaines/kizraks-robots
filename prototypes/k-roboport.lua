@@ -25,20 +25,22 @@ local recipe = {
   energy_required = 5,
   ingredients = {
     {
-      "steel-plate",
-      36
+      type="item",
+      name="steel-plate",
+      amount=36
     },
-    {name="engine-unit", amount=25},
+    { type="item",name="engine-unit", amount=25},
     {
-      "electronic-circuit",
-      90
+      type="item",
+      name="electronic-circuit",
+      amount=90
     },
     {type="fluid", name="steam", amount=2700},
-    {name="coal", amount=220},
+    {type="item", name="coal", amount=220},
   },
   category = "crafting-with-fluid",
   name = "k-roboport",
-  result = "k-roboport",
+  results ={{type = "item", name ="k-roboport", amount = 1} },
   type = "recipe"
 }
 

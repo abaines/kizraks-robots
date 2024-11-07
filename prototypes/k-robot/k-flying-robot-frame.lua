@@ -23,16 +23,16 @@ local recipe = {
   enabled = false,
   energy_required = 20,
   ingredients = {
-    {name="electronic-circuit", amount=9},
-    {name="engine-unit", amount=4},
-    {name="solar-panel", amount=1},
-    {name="copper-plate", amount=8},
+    {type = "item",name="electronic-circuit", amount=9},
+    {type = "item",name="engine-unit", amount=4},
+    {type = "item",name="solar-panel", amount=1},
+    {type = "item",name="copper-plate", amount=8},
     {type="fluid", name="steam", amount=200},
-    {name="coal", amount=45},
+    {type = "item",name="coal", amount=45},
   },
   category = "crafting-with-fluid",
   name = "k-flying-robot-frame",
-  result = "k-flying-robot-frame",
+  results = {{type="item",name="k-flying-robot-frame",amount=1}},
   type = "recipe"
 }
 

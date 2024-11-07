@@ -148,18 +148,20 @@ local recipe = {
   enabled = false,
   ingredients = {
     {
-      "steel-chest",
-      1
+      type="item",
+      name="steel-chest",
+      amount=1
     },
-    {
-      "electronic-circuit",
-      6
+    { 
+      type="item",
+      name="electronic-circuit",
+      amount=6
     },
     {type="fluid", name="steam", amount=120},
-    {name="coal", amount=10},
+    {type="item", name="coal", amount=10},
   },
   name = "k-logistic-chest-active-provider",
-  result = "k-logistic-chest-active-provider",
+  results ={ {type = "item", name = "k-logistic-chest-active-provider",amount = 1}},
   category = "crafting-with-fluid",
   energy_required = 13,
   type = "recipe"

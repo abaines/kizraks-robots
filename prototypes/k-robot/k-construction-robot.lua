@@ -24,16 +24,18 @@ local recipe = {
   enabled = false,
   ingredients = {
     {
-      "k-flying-robot-frame",
-      1
+      type = "item",
+      name ="k-flying-robot-frame",
+      amount = 1
     },
     {
-      "decider-combinator",
-      1
+      type = "item",
+      name ="decider-combinator",
+      amount = 1
     }
   },
   name = "k-construction-robot",
-  result = "k-construction-robot",
+  results = {{type="item",name="k-construction-robot",amount=1}},
   type = "recipe"
 }
 
