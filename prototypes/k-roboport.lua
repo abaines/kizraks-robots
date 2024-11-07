@@ -2,7 +2,7 @@
 -- data.lua
 local sb = serpent.block -- luacheck: ignore 211
 
-local function logsb(input) log(sb(input)) end
+local function logsb(input) log(sb(input)) end  -- luacheck: ignore 211
 
 local item = {
     icon = "__base__/graphics/icons/roboport.png",
@@ -35,9 +35,9 @@ local recipe = {
 
 data:extend{recipe}
 
-local function scale(object, scale)
+local function scale(object, scalar)
     for k1, v1 in ipairs(object) do
-        for k2, v2 in ipairs(v1) do object[k1][k2] = v2 * scale end
+        for k2, v2 in ipairs(v1) do object[k1][k2] = v2 * scalar  end
     end
 end
 
