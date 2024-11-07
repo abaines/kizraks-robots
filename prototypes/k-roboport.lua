@@ -46,31 +46,26 @@ local recipe = {
 
 data:extend{recipe}
 
-local baseRoboport = data.raw["roboport"]["roboport"]
-log(sb(baseRoboport))
+local entity = table.deepcopy(data.raw["roboport"]["roboport"])
+log(sb(entity))
+
+entity.name = "k-roboport"
+entity.circuit_connector = nil
+entity.circuit_wire_max_distance = nil
+entity.construction_radius = 55/2
+entity.energy_usage = "100kW"
+entity.robot_slots_count = 7/2
+entity.logistics_connection_distance = 25
+entity.logistics_radius = 25/2
+entity.material_slots_count = 7/2
+entity.max_health = 500/2
+entity.minable.result = "k-roboport"
+
 
 --[[
-charge_approach_distance = 5,
-charging_energy = "500kW",
 charging_offsets *= 1.25
-circuit_connector = nil
-circuit_wire_max_distance = nil
 collision_box *= 1.25
-construction_radius = 27.5,
-energy_usage = "100kW",
-robot_slots_count = 3.5,
-
 selection_box *= 1.25
-
-logistics_connection_distance = 25,
-logistics_radius = 12.5,
-material_slots_count = 3.5,
-max_health = 250,
-minable = {
-  mining_time = 0.1,
-  result = "k-roboport"
-},
-name = "k-roboport",
 
 recharging_light = {
   color = {
@@ -81,9 +76,12 @@ recharging_light = {
   intensity = 0.4,
   size = 5
 },
+
 ]]--
 
-local entity = {
+
+
+local entityold = {
   base = {
     layers = {
       {
