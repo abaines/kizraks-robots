@@ -92,10 +92,6 @@ local logistic_container = {
     }
   },
   type = "logistic-container",
-  vehicle_impact_sound = {
-    filename = "__base__/sound/car-metal-impact.ogg",
-    volume = 0.65
-  }
 }
 
 pathReplaceRecursively(logistic_container)

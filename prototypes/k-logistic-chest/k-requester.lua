@@ -60,7 +60,6 @@ local logistic_container = {
   icon_size = 64,
   inventory_size = 6,
   logistic_mode = "requester",
-  logistic_slots_count = 3,
   max_logistic_slots = 3,
   max_health = 150,
   minable = {
@@ -94,10 +93,6 @@ local logistic_container = {
     }
   },
   type = "logistic-container",
-  vehicle_impact_sound = {
-    filename = "__base__/sound/car-metal-impact.ogg",
-    volume = 0.65
-  }
 }
 
 pathReplaceRecursively(logistic_container)

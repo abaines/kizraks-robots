@@ -44,10 +44,6 @@ data:extend{recipe}
 local copy = table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
 
 local entity = {
-  cargo_centered = {
-    0,
-    0.2
-  },
   collision_box = {
     {
       0,

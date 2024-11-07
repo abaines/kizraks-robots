@@ -124,7 +124,6 @@ local technology_logistic = {
 	},
 	icon = "__base__/graphics/technology/logistic-robotics.png",
 	icon_size = 256,
-	icon_mipmaps = 4,
 	name = "k-logistic-robotics-technology",
 	order = "kizrak-c-k-c",
 	prerequisites = {"automation-2","toolbelt",},
