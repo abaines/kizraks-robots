@@ -14,19 +14,17 @@ local function ends_with(str, ending)
     return ending == "" or str:sub(-#ending) == ending
 end
 
+local function isNonShadowPngFile(value)
+    return isString(value) and ends_with(value, ".png") and not string.find(value, "shadow")
+end
+
 local function pathReplaceRecursively(object, modname)
     for k, v in pairs(object) do
-
         if isTable(v) then
             pathReplaceRecursively(v, modname)
-
-        elseif isString(v) and ends_with(v, ".png") and
-            not string.find(v, "shadow") then
-            -- log(v)
+        elseif isNonShadowPngFile(v) then
             object[k] = pathReplace(v, modname)
-
         end
-
     end
 end
 

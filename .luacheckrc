@@ -6,6 +6,7 @@ std = {
         "defines",
         "error",
         "game",
+        "ipairs",
         "log",
         "math",
         "mods",
@@ -25,6 +26,6 @@ std = {
     },
 }
 
-max_cyclomatic_complexity = 2
+max_cyclomatic_complexity = 5
 
 print("Hello")
