@@ -120,10 +120,6 @@ local technology_logistic = {
 			modifier = 25, -- 30
 		},
 		{
-			type = "ghost-time-to-live",
-			modifier = 60 * 60 * 60 * 24,
-		},
-		{
 			type = "character-inventory-slots-bonus",
 			modifier = 30,
 		},
