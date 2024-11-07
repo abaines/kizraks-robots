@@ -77,9 +77,9 @@ k_roboport.material_slots_count = 7/2
 k_roboport.max_health = 500/2
 k_roboport.minable.result = "k-roboport"
 
-k_roboport.recharging_light.color={r=1,g=1,b=1}
-k_roboport.recharging_light.intensity=0.4
-k_roboport.recharging_light.size=5
+k_roboport.recharging_light.color={r=1.0,g=0.4,b=0.0}
+k_roboport.recharging_light.intensity=1
+k_roboport.recharging_light.size=7
 
 --[[
 log("------------------------------------------------------------")
